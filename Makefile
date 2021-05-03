@@ -6,7 +6,7 @@
 #    By: faherrau <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/03 15:12:13 by faherrau          #+#    #+#              #
-#    Updated: 2021/05/03 15:12:21 by faherrau         ###   ########lyon.fr    #
+#    Updated: 2021/05/03 18:32:24 by faherrau         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,11 @@ WHITE = \033[1;49;97m
 SRCS		=	main.c
 
 SRC_S		=	ft_strlen.s \
+				ft_strcpy.s \
+				ft_strdup.s \
+				ft_strcmp.s \
+				ft_write.s \
+				ft_read.s
 
 NAME		= 	libasm.a
 
@@ -70,5 +75,7 @@ fclean:			clean
 				@$(RM) $(NAME)
 
 re:				fclean	all
+
+ImaWiseMan:		re	exe
 
 .PHONY:			make all clean fclean re exe

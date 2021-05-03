@@ -7,7 +7,7 @@ _ft_strlen:
 
 .loop:
 	cmp		byte [rdi], 0
-	je		grosseteuch
+	je		grosseteuch ; sinon j'aurais pu {ret}
 	inc		rdi
 	inc		rax
 	jmp		.loop
