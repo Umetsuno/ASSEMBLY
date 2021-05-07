@@ -6,7 +6,7 @@
 #    By: faherrau <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/03 15:12:13 by faherrau          #+#    #+#              #
-#    Updated: 2021/05/03 18:32:24 by faherrau         ###   ########lyon.fr    #
+#    Updated: 2021/05/07 14:51:33 by faherrau         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,7 +63,7 @@ $(NAME): 		$(OBJS)
 				@$(GCC) $(CFLAGS) -o $(NAME) $(OBJS)
 				@printf "\033[2K\r$(BLUE)$(NAME)$(RESET)$(BLUEE): $(ICONOK)Compiled √$(RESET)\n"
 
-exe:	
+bsh:	
 		@./$(NAME)
 		
 
@@ -76,6 +76,6 @@ fclean:			clean
 
 re:				fclean	all
 
-ImaWiseMan:		re	exe
+ImaWiseMan:		re	bsh
 
 .PHONY:			make all clean fclean re exe
